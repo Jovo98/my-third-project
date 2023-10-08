@@ -7,7 +7,8 @@
     <meta property="og:title" content="#">
     <meta property="og:url" content="#">
     <link href="styles.css" type="text/css" rel="stylesheet">
-    <title>Title</title>
+    <script src="script.js"></script>
+    <title>My Journey</title>
 
 </head>
 
@@ -18,11 +19,10 @@
     <!--<p>Join me on my journey as I explore the wonders of the world</p>-->
         <nav>
             <section>
-                <h2>My destinations</h2>
                 <div class="center">
                     <ul type="none">
                         <li><a href="#japan" class="button">Japan</a></li>
-                        <li><a href="#vietnam" class="button">Vietnam</a></li>
+                        <li><a href="vietnam.html" class="button">Vietnam</a></li>
                         <li><a href="#england" class="button">England</a></li>
                     </ul>
                 </div>
@@ -30,26 +30,141 @@
             </section>
         </nav>
     </header>
+    <hr>
 
-<main>
+<main class="center">
 
-    <section id="japan">
-        <h2>Japan</h2>
+    <section class="japan" id="japan">
+        <h2>30 days in Japan</h2>
+        <hr>
+        <div>
+            <p style="text-align: center;">Japan trip with my brother</p>
+            <h3>Week 1 - <span class="yellow">Kabukicho</span> </h3>
+            <p>Japan's most famous entertainment district known for adult-oriented nightlife. Small clubs, smoky pubs and late-night snack bars.</p>
+            <p>Kabukicho Tower, the multi-story entertainment complex opened in 2023, and has a game center, escape room, food hall, and live music venue.</p>
+        </div>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides1 fade" style="display: block;">
+                <div class="number-text1">1 / 4</div>
+                <img alt="Kabukicho tower" src="assets/images/kabukicho-1-new.jpg" style="width:100%">
+                <div class="text">Kabukicho street</div>
+            </div>
+
+            <div class="mySlides1 fade">
+                <div class="number-text2">2 / 4</div>
+                <img alt="#" src="assets/images/kabukicho-2-new.jpg" style="width:100%">
+                <div class="text">1st floor of Kabukicho tower</div>
+            </div>
+
+            <div class="mySlides1 fade">
+                <div class="number-text3">3 / 4</div>
+                <img alt="#" src="assets/images/kabukicho-3-new.jpg" style="width:100%">
+                <div class="text">Top floor of Kabukicho tower</div>
+            </div>
+
+            <div class="mySlides1 fade">
+                <div class="number-text4">4 / 4</div>
+                <img alt="#" src="assets/images/kabukicho-4.jpg" style="width:100%">
+                <div class="text">Oldschool album covers</div>
+            </div>
+
+
+        <div>  <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
 
     </section>
 
-    <section id="vietnam">
-        <h2>Vietnam</h2>
+
+    <section class="japan">
+        <h2><span class="yellow">Shibuya</span></h2>
+        <p>The lively hub of Shibuya is the youth heart and soul of Tokyo. With world-famous sights including the iconic scramble crossing, this area is a must-see for nightlife and trendy youth culture.</p>
+        <p>Below is a video of me walking the Shibuya crosswalk</p>
+        <video controls="controls">
+            <source src="assets/videos/shibuya-crossing.mp4" type="video/mp4">
+        </video>
     </section>
 
-    <section id="england" style="bottom:0;">
-        <h2>England</h2>
-    </section>
+    <section class="japan">
+        <div>
+            <h2><span class="red">Red</span> <span class="yellow">Tokyo Tower</span></h2>
+            <p>A red and white tower inspired by the Eiffel Tower in Paris. This tower is perhaps Tokyo's most beloved retro icon and at over 333 metres tall.</p>
+            <p>Within the tower is Japan's largest VR/AR/eSports Theme Park</p>
+        </div>
 
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides2 fade" style="display: block;">
+                <div class="number-text1">1 / 5</div>
+                <img alt="Tokyo red tower" src="assets/images/tokyo-tower-1.jpg" style="width:100%">
+                <div class="text">Red Tokyo Tower during the day</div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="number-text2">2 / 5</div>
+                <img alt="#" src="assets/images/tokyo-tower-2.jpg" style="width:100%">
+                <div class="text">Virtual reality game</div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="number-text3">3 / 5</div>
+                <img alt="A game based on the famous show Squid Games" src="assets/images/tokyo-tower-3.jpg" style="width:100%">
+                <div class="text">Activity based on the famous show Squid Games</div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="number-text4">4 / 5</div>
+                <img alt="Bottom floor" src="assets/images/tokyo-tower-4.jpg" style="width:100%">
+                <div class="text">Bottom floor had a wide variety of restaurants</div>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div class="number-text5">5 / 5</div>
+                <img alt="Red tokyo tower" src="assets/images/tokyo-tower-5.jpg" style="width:100%">
+                <div class="text">Red Tokyo Tower during the night</div>
+            </div>
+
+
+            <div>  <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide2(1, 1)"></span>
+                <span class="dot" onclick="currentSlide2(2, 1)"></span>
+                <span class="dot" onclick="currentSlide2(3, 1)"></span>
+                <span class="dot" onclick="currentSlide2(4, 1)"></span>
+                <span class="dot" onclick="currentSlide2(5, 1)"></span>
+            </div>
+
+    </section>
+    <form>
+        <label id="Name">
+
+
+        </label>
+    </form>
 </main>
 
 <footer>
-    <p>Copyright 2023</p>
+    <p style="color:white;"> © Copyright 2023</p>
 </footer>
 
 </body>
